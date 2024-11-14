@@ -147,3 +147,8 @@ form input[type="submit"]:hover{
     background-image: linear-gradient(to right, #e2e2e2,
     #c9d6ff); 
 }
+
+.container-right .sher-button a{
+    text-decoration: none;
+    color: black;
+}
