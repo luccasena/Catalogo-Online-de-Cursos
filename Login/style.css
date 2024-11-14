@@ -157,6 +157,7 @@ form input[type="submit"]:hover{
     display: none;
     margin: .3rem 0 0 .1rem;
     color: red;
+    font-size: 1.3rem;
 }
 
 .container-right .sher-button a{

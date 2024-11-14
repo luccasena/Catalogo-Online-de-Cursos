@@ -6,8 +6,9 @@
     <title>TechMind Academy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="script.js" defer></script>
 </head>
-<script src="script.js"></script>
+
 <body>
 
     <div class="container">
@@ -15,13 +16,13 @@
             <div class="formulario">
                 <form action="#" method="">
                     <h2 class="title">Registra-se</h2>
-                    <input type="text" name="user" id="user" placeholder="Username" class="inputs required" oninput="nameValidate()">
+                    <input type="text" name="user" id="user" placeholder="Username" class="required" oninput="nameValidate()">
                     <span class="span-required">Nome deve conter no minimo 4 caracteres</span>
-                    <input type="email" name="email" id="email" placeholder="E-mail" class="inputs required">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required class="required" oninput="emailValidate()">
                     <span class="span-required">Digite um e-mail valido</span>
-                    <input type="password" name="psw1" id="psw1" placeholder="Senha" class="inputs required">
+                    <input type="password" name="psw1" id="psw1" placeholder="Senha" class="required" oninput="passwordValidate()">
                     <span class="span-required">digite uma senha com no minimo 8 caracteres</span>
-                    <input type="password" name="psw2" id="psw2" placeholder="Confirme sua Senha" class="inputs required">
+                    <input type="password" name="psw2" id="psw2" placeholder="Confirme sua Senha" class="inputs required" oninput="confirmPassword()">
                     <span class="span-required">senhas devem ser compativeis</span>
                     <div class="sher-enviar">
                         <input type="submit" value="Registra-se">  
