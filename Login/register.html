@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMind Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <div class="container">
+        <div class="container-left">
+            <div class="formulario">
+                <form action="#" method="">
+                    <h2 class="title">Registra-se</h2>
+                    <input type="text" name="user" id="user" placeholder="Username" class="inputs required" oninput="nameValidate()">
+                    <span class="span-required">Nome deve conter no minimo 4 caracteres</span>
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="inputs required">
+                    <span class="span-required">Digite um e-mail valido</span>
+                    <input type="password" name="psw1" id="psw1" placeholder="Senha" class="inputs required">
+                    <span class="span-required">digite uma senha com no minimo 8 caracteres</span>
+                    <input type="password" name="psw2" id="psw2" placeholder="Confirme sua Senha" class="inputs required">
+                    <span class="span-required">senhas devem ser compativeis</span>
+                    <div class="sher-enviar">
+                        <input type="submit" value="Registra-se">  
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="container-right">
+            <h1 class="title-one">Você ja tem registro?</h1>
+                <p class="para-top">Entre em sua conta clicando aqui!</p>
+                <div class="sher-button">
+                    <button><a href="/Login/login.html">ENTRAR</a></button>
+                </div>
+                <div class="image-cont">
+                    <img src="/images/undraw_programming_re_kg9v.svg" alt="computador">
+                </div>
+        </div>
+    </div>
+</body>
+</html>

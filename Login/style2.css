@@ -41,8 +41,8 @@ body{
 }
 
 .image-cont img{
-    height: 280px;
-    margin-left: 3rem;
+    height: 250px;
+    margin-left: 10rem;
     margin-top: 2rem;
 }
 
@@ -64,7 +64,7 @@ body{
 .formulario form input{
     border-radius: 12px;
     width: 400px;
-    border: 2px solid white;
+    border: 0;
     outline: 0;
     font-size: 1.8rem;
     padding: 1.2rem;
@@ -72,10 +72,6 @@ body{
     font-weight: 300;
     font-style: normal;
     line-height: 30px;
-}
-
-.formulario form input:focus{
-    border-color: var(--cor_principal);
 }
 
 h2{
@@ -96,7 +92,6 @@ form input[type="submit"]{
     border-radius: 20px;
     transition: .4s;
     cursor: pointer;
-    border: 0;
     
 }
 
@@ -120,8 +115,8 @@ form input[type="submit"]:hover{
     font-weight: 400;
     font-style: italic;
     text-align: center;
-    line-height: 70px;
-    margin-top: 5rem;
+    line-height: 60px;
+    margin-top: 3rem;
 }
 
 .container-right p{
@@ -151,15 +146,4 @@ form input[type="submit"]:hover{
     box-shadow: 0px 0px 10px var(--cor_principal);
     background-image: linear-gradient(to right, #e2e2e2,
     #c9d6ff); 
-}
-
-.span-required{
-    display: none;
-    margin: .3rem 0 0 .1rem;
-    color: red;
-}
-
-.container-right .sher-button a{
-    text-decoration: none;
-    color: black;
 }
