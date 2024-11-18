@@ -40,9 +40,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, #e2e2e2,
-    #c9d6ff);
-    box-shadow: 0px 0px 10px;
+    background-color: #e2e2e2;
+    padding: 4rem 15%;
 }
 
 header nav ul{
@@ -67,7 +66,7 @@ header a{
 }
 
 header a:hover{
-    color:white;
+    color:var(--cor_black);
     transform: scale(1.05);
 }
 
@@ -83,6 +82,18 @@ header a:hover{
     font-family: "Poppins", system-ui;
     font-weight: 300;
     font-style: normal;
+}
+
+.nome-nav{
+    font-size: 3rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 57px;
+}
+
+.nome-nav span{
+    color: rgb(140, 140, 214);
 }
 
 /*ESTILO CONTAINER*/
@@ -105,7 +116,7 @@ section .txt-container-site h1{
     font-family: "Poppins", system-ui;
     font-weight: 700;
     font-style: italic;
-    line-height: 57px;
+    line-height: 67px;
 }
 
 section .txt-container-site .btn{
@@ -138,6 +149,7 @@ section .img-banner img{
 
 section .container-light{
     padding: 8rem;
+    background-color:#c9d6ff;
 }
 
 section .container-light h2{
@@ -159,11 +171,14 @@ section .container-cursos{
 section .container-cursos .curso-card{
     max-width: 405px;
     border-radius: 10px;
+    transition: .4s;
 }
 
 section .curso-card{
     border: 1px solid darkgray;
     margin-bottom: 4rem;
+    background-image: linear-gradient(#e2e2e2,
+    #c9d6ff);
 }
 
 section .container-cursos .curso-card h3{
@@ -187,7 +202,7 @@ section .btn-cursos{
     font-size: 2rem;
     text-decoration: none;
     border: 0;
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_principal);
     color: black;
     border-radius: 12px;
     transition: .4s;
@@ -206,13 +221,20 @@ section .btn-cursos{
 section .btn-cursos:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 10px var(--cor_secundaria);
+    color: white;
+}
+
+section .container-cursos .curso-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+
 }
 
 /*ESTILO CONTAINER DARK*/
 
 section .container-dark{
     padding: 80px 15%;
-    background-color: rgb(40, 40, 156);
+    background-color: #c9d6ff;
 }
 
 section .flex{
@@ -224,7 +246,7 @@ section .flex{
 section .container-txt-site h2{
     font-size: 4rem;
     padding: 0 2rem;
-    color: var(--cor_terciaria);
+    color: var(--cor_black);
     font-family: "Poppins", system-ui;
     font-weight: 600;
     font-style: normal;
@@ -232,58 +254,71 @@ section .container-txt-site h2{
 section .container-txt-site p{
     font-size: 2rem;
     padding: 2rem;
-    color: var(--cor_terciaria);
+    color: var(--cor_black);
     font-family: "Poppins", system-ui;
     font-weight: 300;
     font-style: normal;
 }
 
-/*ESTILO DO MAPA*/
-
-section .container-map{
-    padding: 80px 4%;
+.container-image img{
+    height: 400px;
+    width: 500px;
 }
 
-section .container-map h2{
-    text-align: center;
-    font-size: 4rem;
-    font-family: "Poppins", system-ui;
-    font-weight: 600;
-    font-style: normal;
-}
-
-section .container-map-hero {
-    padding: 0 15%;
-}
-
-section .container-map-hero address{
-    font-size: 2rem;
-    padding: 2rem;
-    font-family: "Poppins", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 5rem;
-}
 
 /*ESTILO DO FOOTER*/
 
+
 footer{
-    padding: 80px 4%;
-    background-color: var(--cor_black);
-    box-shadow: 0px 0px 20px;
+    padding: 40px 4%;
+    background-color: var(--cor_principal);
+    height: 200px;
+    border-top: 0;
+    box-shadow: 0px 0px 10px ;
 }
 
-footer .container-evil{
-    text-align: center;
-    font-size: 2rem;
+footer .flex{
+    justify-content:space-between;
 }
 
-footer .container-evil a{
+footer .cont-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    transition: .2s;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    background-color:white;
+    cursor: pointer;
+    margin-bottom:2rem ;
+    padding: 2rem;
+}
+
+footer .cont-footer button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px;
+}
+
+footer .line-footer{
+    border-top: 2px solid white;
+}
+
+footer .line-footer a{
     text-decoration: none;
-    color: var(--cor_principal);
+    margin: 10px;
+    color: yellow;
 }
 
-footer .container-evil p{
+footer .name-footer h3{
+    font-size: 3rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 57px;
+}
+
+footer .name-footer span{
     color: white;
 }
 
