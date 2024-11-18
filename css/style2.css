@@ -64,7 +64,7 @@ body{
 .formulario form input{
     border-radius: 12px;
     width: 400px;
-    border: 0;
+    border: 2px solid white;
     outline: 0;
     font-size: 1.8rem;
     padding: 1.2rem;
@@ -92,6 +92,7 @@ form input[type="submit"]{
     border-radius: 20px;
     transition: .4s;
     cursor: pointer;
+    border: 0;
     
 }
 
@@ -151,4 +152,15 @@ form input[type="submit"]:hover{
 .container-right .sher-button a{
     text-decoration: none;
     color: black;
+}
+
+.span-required{
+    display: none;
+    margin: .3rem 0 0 .1rem;
+    color: red;
+    font-size: 1.3rem;
+}
+
+.formulario form input:focus{
+    border-color: var(--cor_principal);
 }
