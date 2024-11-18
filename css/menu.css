@@ -1,0 +1,291 @@
+
+/* ESTILO GERAL */
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.interface{
+    margin: auto;
+}
+
+:root{
+    --cor_principal: rgb(140, 140, 214);
+    --cor_black: black;
+    --cor_terciaria: white;
+}
+
+.flex{
+    display: flex;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+header{
+    padding: 3rem 10%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #e2e2e2,
+    #c9d6ff);
+    box-shadow: 0px 0px 10px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0.4rem;
+    font-size: 1.7rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor_principal);
+    padding: 1.3rem 1.4rem;
+    transition: .5s;
+    display: inline-block;
+}
+
+header a:hover{
+    color:white;
+    transform: scale(1.05);
+}
+
+.interface{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.perfil{
+    font-size: 1.7rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*ESTILO CONTAINER*/
+
+section .container{
+    padding: 7rem 15%;
+    background-image: linear-gradient(#e2e2e2,
+    #c9d6ff);
+}
+
+section .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+section .txt-container-site h1{
+    font-size: 5rem;
+    margin-bottom: 2.6rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 57px;
+}
+
+section .txt-container-site .btn{
+    padding: 15px 40px;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 0;
+    background-color: var(--cor_principal);
+    color: black;
+    border-radius: 12px;
+    transition: .4s;
+    display: inline-block;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+section .btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px var(--cor_principal);
+    color: white;
+}
+
+section .img-banner img{
+    height: 400px;
+    width: 500px;
+}
+
+/*ESTILO CONTAINER HERO*/
+
+section .container-light{
+    padding: 8rem;
+}
+
+section .container-light h2{
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+section .container-cursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+section .container-cursos .curso-card{
+    max-width: 405px;
+    border-radius: 10px;
+}
+
+section .curso-card{
+    border: 1px solid darkgray;
+    margin-bottom: 4rem;
+}
+
+section .container-cursos .curso-card h3{
+    font-size: 3rem;
+    padding: 2.4rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section .container-cursos .curso-card p{
+    font-size: 2rem;
+    padding: 2.4rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section .btn-cursos{
+    padding: 15px 40px;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 0;
+    background-color: var(--cor_secundaria);
+    color: black;
+    border-radius: 12px;
+    transition: .4s;
+    display: inline-block;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+section .btn-cursos:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px var(--cor_secundaria);
+}
+
+/*ESTILO CONTAINER DARK*/
+
+section .container-dark{
+    padding: 80px 15%;
+    background-color: rgb(40, 40, 156);
+}
+
+section .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+section .container-txt-site h2{
+    font-size: 4rem;
+    padding: 0 2rem;
+    color: var(--cor_terciaria);
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+section .container-txt-site p{
+    font-size: 2rem;
+    padding: 2rem;
+    color: var(--cor_terciaria);
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*ESTILO DO MAPA*/
+
+section .container-map{
+    padding: 80px 4%;
+}
+
+section .container-map h2{
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+section .container-map-hero {
+    padding: 0 15%;
+}
+
+section .container-map-hero address{
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5rem;
+}
+
+/*ESTILO DO FOOTER*/
+
+footer{
+    padding: 80px 4%;
+    background-color: var(--cor_black);
+    box-shadow: 0px 0px 20px;
+}
+
+footer .container-evil{
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer .container-evil a{
+    text-decoration: none;
+    color: var(--cor_principal);
+}
+
+footer .container-evil p{
+    color: white;
+}
+
+
+

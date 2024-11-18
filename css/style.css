@@ -23,7 +23,7 @@ body{
 }
 
 :root{
-    --cor_principal: rgb(140, 140, 214)
+    --cor_principal: rgb(140, 140, 214);
 }
 
 /*ESTILO REGISTER*/
