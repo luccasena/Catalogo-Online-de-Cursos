@@ -15,8 +15,8 @@ try {
     // Configurações do servidor
     $mail->isSMTP();                                    // Define o uso de SMTP no envio
     $mail->SMTPAuth   = true;                           // Habilita a autenticação SMTP
-    $mail->Username   = 'techmindacademy22@gmail.com';  // Seu e-mail
-    $mail->Password   = 'casx csyv svrb sugc';          // Senha de App do Gmail
+    $mail->Username   = '@gmail.com';  // Seu e-mail
+    $mail->Password   = '';          // Senha de App do Gmail
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;    // Criptografia 
     $mail->Host       = 'smtp.gmail.com';               // Host SMTP do Gmail
     $mail->Port       = 465;                            // Porta SMTP
