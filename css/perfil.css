@@ -1,0 +1,96 @@
+/* ESTILO GERAL */
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.interface{
+    margin: auto;
+}
+
+:root{
+    --cor_principal: rgb(140, 140, 214);
+    --cor_black: black;
+    --cor_terciaria: white;
+}
+
+.flex{
+    display: flex;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+header{
+    padding: 3rem 10%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    padding: 4rem 15%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0.4rem;
+    font-size: 1.7rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor_principal);
+    padding: 1.3rem 1.4rem;
+    transition: .5s;
+    display: inline-block;
+}
+
+header a:hover{
+    color:var(--cor_black);
+    transform: scale(1.05);
+}
+
+.interface{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.perfil{
+    font-size: 1.7rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.nome-nav{
+    font-size: 3rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 57px;
+}
+
+.nome-nav span{
+    color: rgb(140, 140, 214);
+}
