@@ -1,6 +1,6 @@
 <?php
     include "connection.php";
-
+    session_start();
     $connection = create_connection();
     $email = $_POST["email"];
     $password_user = $_POST["psw1"]; 
@@ -13,5 +13,8 @@
             </script>');
     }
     else{
+        $row = mysqli_fetch_assoc($result);
+        $user_id = $row['id'];
+        $_SESSION['id'] = $user_id;
         header('Location:menu.html');
     }

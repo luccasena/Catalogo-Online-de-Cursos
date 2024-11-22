@@ -1,37 +1,44 @@
 <?php
+    include "connection.php";
     include "inscrever_curso.php";
+    $connection = create_connection();
+    session_start();
 
-    $pegar_curso = $_POST["curso"];
-
-    $email = $_COOKIE["email"];
-    $nome = $_COOKIE["nome"];
-
-    if ($pegar_curso == "design_para_web"){
+    $get_id_in_session = $_SESSION['id'];
+    $result = mysqli_query($connection,"SELECT * FROM users WHERE id = '$get_id_in_session'");
+    $row = mysqli_fetch_assoc($result);
+    $nome = $row['name'];
+    $email = $row['email'];
+    $pegar_curso = $_GET['curso'];
+    if ($pegar_curso == "curso_de_programação_web"){
         $curso = "Design para Web";
+        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
         inscrever_curso($email, $nome, $curso);
+        
     
     }elseif($pegar_curso == "front_end"){
         $curso = "Front-End";
+        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session)");
         inscrever_curso($email, $nome, $curso);
 
     }elseif($pegar_curso == "back_end"){
         $curso = "Back-End";
+        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
         inscrever_curso($email, $nome, $curso);
 
     }elseif($pegar_curso == "ia"){
         $curso = "Especialista em IA";
+        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
         inscrever_curso($email, $nome, $curso);
 
     }elseif($pegar_curso == "games"){
         $curso = "Desenvolvedor de Jogos";
+        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
         inscrever_curso($email, $nome, $curso);
 
     }
     echo('<script language="javascript" type="text/javascript">
-            alert("Curso Registrado!");
-            window.location.href = "menu.html";
-        </script>');
- 
-
-
+        alert("Curso Registrado!");
+        window.location.href = "menu.html";
+    </script>');
 ?>

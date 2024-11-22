@@ -23,11 +23,8 @@
             UNIQUE (`email`),
             PRIMARY KEY (id))");
   
-        mysqli_query($connection,"CREATE TABLE IF NOT EXISTS assessments
+        mysqli_query($connection,"CREATE TABLE IF NOT EXISTS cursos
             (id INT NOT NULL AUTO_INCREMENT,
             user_id INT NOT NULL,
-            comments TEXT(255) NULL,
-            assessment INT(2) NOT NULL,
-            PRIMARY KEY (id),
-            FOREIGN KEY (user_id) REFERENCES users(id))");
+            PRIMARY KEY (id))");
     }
