@@ -1,6 +1,6 @@
 <?php
   include "connection.php";
-  include "email.php";
+  include "email_bem_vindo.php";
   
   $connection = create_connection();
   create_tables($connection);
@@ -17,7 +17,7 @@
     $row = mysqli_fetch_assoc($result);
     $user_id = $row['id'];
     $_SESSION['user_id'] = $user_id;
-    enviar_email($email, $name);
+    email_bem_vindo($email, $name);
   }
 
   header("Location: menu.html");

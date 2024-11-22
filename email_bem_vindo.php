@@ -36,14 +36,14 @@
 
             $mail->isSMTP();                                            // Define o uso de SMTP no envio.
             $mail->SMTPAuth   = true;                                   // Habilita a autenticação SMTP.
-            $mail->Username   = $_ENV['MAIN_EMAIL'];                    // O e-mail da empresa.
-            $mail->Password   = $_ENV['MAIN_PASSWORD'];                 // A senha do e-mail da empresa.
+            $mail->Username   = 'techmindacademy22@gmail.com';                    // O e-mail da empresa.
+            $mail->Password   = 'btev yccz sfuy zmeq';                 // A senha do e-mail da empresa.
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Criptografia: Importante para manter a segurança dos dados no momento de envio.
             $mail->Host       = 'smtp.gmail.com';                       // Define que o servidor utilizado para o envio de e-mails é o "gmail" ou simplesmente define o host SMTP.
             $mail->Port       = 465;                                    // Define a porta utilizada para a comunicação com o servidor SMTP.
 
             
-            $mail->setFrom($_ENV['MAIN_EMAIL'], 'Tech Mind Academy');   // Define o remetente, assumindo respectivamente o e-mail e o nome da empresa.
+            $mail->setFrom('techmindacademy22@gmail.com', 'Tech Mind Academy');   // Define o remetente, assumindo respectivamente o e-mail e o nome da empresa.
             
                                                                         
             $mail->addAddress($email, $nome);                           // Define o destinatário, assumindo respectivamente o e-mail e o nome do usuário.
