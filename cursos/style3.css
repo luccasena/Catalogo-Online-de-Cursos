@@ -1,0 +1,106 @@
+/* Estilização global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0ff;
+    color: #4a007d;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(140, 140, 214);
+    color: #fff;
+    align-items: center;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização da página principal */
+.course-container {
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.course-box {
+    background-color: #fff;
+    border: 2px solid rgb(140, 140, 214);
+    border-radius: 8px;
+    padding: 13px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.course-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-box img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Páginas individuais */
+main p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgb(140, 140, 214);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4a007d;
+}
