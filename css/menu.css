@@ -135,6 +135,10 @@ section .txt-container-site .btn{
     font-style: normal;
 }
 
+.txt-container-site span{
+    color: rgb(140, 140, 214);
+}
+
 section .btn:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 20px var(--cor_principal);
