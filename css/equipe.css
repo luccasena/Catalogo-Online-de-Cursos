@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ESTILO GERAL */
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.interface{
+    margin: auto;
+}
+
+:root{
+    --cor_principal: rgb(140, 140, 214);
+    --cor_black: black;
+    --cor_terciaria: white;
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+    padding: 3rem 10%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    padding: 4rem 15%;
+}
+
+header nav ul{
+    list-style-type: none;
+    margin-right: 10rem;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0.6rem;
+    font-size: 1.7rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor_principal);
+    padding: 1.3rem 1.4rem;
+    transition: .5s;
+    display: inline-block;
+}
+
+header a:hover{
+    color:var(--cor_black);
+    transform: scale(1.05);
+}
+
+.interface{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.perfil{
+    font-size: 1.7rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.nome-nav{
+    font-size: 3rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 57px;
+}
+
+.nome-nav span{
+    color: rgb(140, 140, 214);
+}
+
+/*ESTILO DAS EQUIPES*/
+
+main{
+    padding: 8rem 15% ;
+    background-image: linear-gradient(#e2e2e2,
+    #c9d6ff);
+}
+
+.teamTitle{
+    font-size:4rem;
+    text-align: center;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 57px;
+}
+
+.teamTitle span{
+    color: rgb(140, 140, 214);
+}
+
+.team-devs{
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 11rem;
+    margin: 0 auto;
+}
+
+.imageDevs img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.devs-card{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.namePerson{
+    font-size: 2rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.descPerson{
+    font-size: 2rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.mainBtn{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    transition: .4s;
+    cursor: pointer;
+    border: 0;
+    margin-top: 1rem;
+    background-color: var(--cor_principal);
+}
+
+.mainBtn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px var(--cor_principal);
+    color: #e2e2e2;
+}
+
+/*ESTILO DO FOOTER*/
+
+footer{
+    padding: 40px 4%;
+    background-color: var(--cor_principal);
+    height: 200px;
+    border-top: 0;
+    box-shadow: 0px 0px 10px ;
+}
+
+footer .flex{
+    justify-content:space-between;
+}
+
+footer .cont-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    transition: .2s;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    background-color:white;
+    cursor: pointer;
+    margin-bottom:2rem ;
+    padding: 2rem;
+}
+
+footer .cont-footer button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px;
+}
+
+footer .line-footer{
+    border-top: 2px solid white;
+}
+
+footer .line-footer a{
+    text-decoration: none;
+    margin: 10px;
+    color: yellow;
+}
+
+footer .name-footer h3{
+    font-size: 3rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 57px;
+}
+
+footer .name-footer span{
+    color: white;
+}
+
+
+
+
+

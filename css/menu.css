@@ -46,6 +46,7 @@ header{
 
 header nav ul{
     list-style-type: none;
+    margin-right: 10rem;
 }
 
 header nav ul li{
