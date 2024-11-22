@@ -8,10 +8,10 @@
   $name = $_POST["name"];
   $email = $_POST["email"];
   $password_user = $_POST["psw1"];
-  mysqli_query($connection,"INSERT INTO users (nome, email, senha) VALUES ('$name', '$email', '$password_user')");
-
-  enviar_email($email, $name);
-
+  $sql = mysqli_query($connection,"INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password_user')");
+  if($sql){
+    enviar_email($email, $name);
+  }
   header("Location: menu.html");
   exit();
 ?>
