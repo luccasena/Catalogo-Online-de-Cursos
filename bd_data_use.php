@@ -12,32 +12,92 @@
     $pegar_curso = $_GET['curso'];
     if ($pegar_curso == "design_web"){
         $curso = "Design para Web";
-        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
-        inscrever_curso($email, $nome, $curso);
+        $queryset = mysqli_query($connection,"SELECT * FROM cursos WHERE user_id = '$get_id_in_session' AND name = '$curso'");
+        if(mysqli_num_rows($queryset)<1){
+            mysqli_query($connection,"INSERT INTO cursos (user_id,name) VALUES ('$get_id_in_session','$curso')");
+            inscrever_curso($email, $nome, $curso);
+            echo('<script language="javascript" type="text/javascript">
+                    alert("Curso Registrado!");
+                    window.location.href = "fd_perfil.html";
+                </script>');
+        }
+        else{
+            echo('<script language="javascript" type="text/javascript">
+            alert("Você ja esta inscrito nesse curso!");
+            window.location.href = "fd_cursos.html";
+        </script>');
+        }
+      
         
     }elseif($pegar_curso == "front_end"){
         $curso = "Front-End";
-        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
-        inscrever_curso($email, $nome, $curso);
-
+        $queryset = mysqli_query($connection,"SELECT * FROM cursos WHERE user_id = '$get_id_in_session' AND name = '$curso'");
+        if(mysqli_num_rows($queryset)<1){
+            mysqli_query($connection,"INSERT INTO cursos (user_id,name) VALUES ('$get_id_in_session','$curso')");
+            inscrever_curso($email, $nome, $curso);
+            echo('<script language="javascript" type="text/javascript">
+                    alert("Curso Registrado!");
+                    window.location.href = "fd_perfil.html";
+                </script>');
+        }
+        else{
+            echo('<script language="javascript" type="text/javascript">
+            alert("Você ja esta inscrito nesse curso!");
+            window.location.href = "fd_cursos.html";
+        </script>');
+        }
     }elseif($pegar_curso == "back_end"){
         $curso = "Back-End";
-        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
-        inscrever_curso($email, $nome, $curso);
+        $queryset = mysqli_query($connection,"SELECT * FROM cursos WHERE user_id = '$get_id_in_session' AND name = '$curso'");
+        if(mysqli_num_rows($queryset)<1){
+            mysqli_query($connection,"INSERT INTO cursos (user_id,name) VALUES ('$get_id_in_session','$curso')");
+            inscrever_curso($email, $nome, $curso);
+            echo('<script language="javascript" type="text/javascript">
+                    alert("Curso Registrado!");
+                    window.location.href = "fd_perfil.html";
+                </script>');
+        }
+        else{
+            echo('<script language="javascript" type="text/javascript">
+            alert("Você ja esta inscrito nesse curso!");
+            window.location.href = "fd_cursos.html";
+        </script>');
+        }
 
     }elseif($pegar_curso == "ia"){
         $curso = "Especialista em IA";
-        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
-        inscrever_curso($email, $nome, $curso);
+        $queryset = mysqli_query($connection,"SELECT * FROM cursos WHERE user_id = '$get_id_in_session' AND name = '$curso'");
+        if(mysqli_num_rows($queryset)<1){
+            mysqli_query($connection,"INSERT INTO cursos (user_id,name) VALUES ('$get_id_in_session','$curso')");
+            inscrever_curso($email, $nome, $curso);
+            echo('<script language="javascript" type="text/javascript">
+                    alert("Curso Registrado!");
+                    window.location.href = "fd_perfil.html";
+                </script>');
+        }
+        else{
+            echo('<script language="javascript" type="text/javascript">
+            alert("Você ja esta inscrito nesse curso!");
+            window.location.href = "fd_cursos.html";
+        </script>');
+        }
 
     }elseif($pegar_curso == "games"){
         $curso = "Desenvolvedor de Jogos";
-        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
-        inscrever_curso($email, $nome, $curso);
-
+        $queryset = mysqli_query($connection,"SELECT * FROM cursos WHERE user_id = '$get_id_in_session' AND name = '$curso'");
+        if(mysqli_num_rows($queryset)<1){
+            mysqli_query($connection,"INSERT INTO cursos (user_id,name) VALUES ('$get_id_in_session','$curso')");
+            inscrever_curso($email, $nome, $curso);
+            echo('<script language="javascript" type="text/javascript">
+                    alert("Curso Registrado!");
+                    window.location.href = "fd_perfil.html";
+                </script>');
+        }
+        else{
+            echo('<script language="javascript" type="text/javascript">
+            alert("Você ja esta inscrito nesse curso!");
+            window.location.href = "fd_cursos.html";
+        </script>');
+        }
     }
-    echo('<script language="javascript" type="text/javascript">
-        alert("Curso Registrado!");
-        window.location.href = "fd_perfil.html";
-    </script>');
 ?>
