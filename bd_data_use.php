@@ -38,6 +38,6 @@
     }
     echo('<script language="javascript" type="text/javascript">
         alert("Curso Registrado!");
-        window.location.href = "menu.html";
+        window.location.href = "bd_menu.html";
     </script>');
 ?>
