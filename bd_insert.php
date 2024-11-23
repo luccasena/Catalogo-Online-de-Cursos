@@ -1,6 +1,6 @@
 <?php
-  include "connection.php";
-  include "email_bem_vindo.php";
+  include "bd_connection.php";
+  include "bd_email_bem_vindo.php";
   
   $connection = create_connection();
   create_tables($connection);
@@ -20,7 +20,7 @@
     email_bem_vindo($email, $name);
   }
 
-  header("Location: menu.html");
+  header("Location: fd_menu.html");
   exit();
 
 ?>

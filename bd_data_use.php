@@ -1,6 +1,6 @@
 <?php
-    include "connection.php";
-    include "inscrever_curso.php";
+    include "bd_connection.php";
+    include "bd_inscrever_curso.php";
     $connection = create_connection();
     session_start();
 
@@ -10,12 +10,11 @@
     $nome = $row['name'];
     $email = $row['email'];
     $pegar_curso = $_GET['curso'];
-    if ($pegar_curso == "curso_de_programação_web"){
+    if ($pegar_curso == "design_web"){
         $curso = "Design para Web";
         mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
         inscrever_curso($email, $nome, $curso);
         
-    
     }elseif($pegar_curso == "front_end"){
         $curso = "Front-End";
         mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session)");

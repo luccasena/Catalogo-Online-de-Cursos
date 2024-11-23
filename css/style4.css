@@ -97,6 +97,26 @@ header a:hover{
 .nome-nav span{
     color: rgb(140, 140, 214);
 }
+.profile-title {
+    font-size: 3.5rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--cor_black);
+}
+.profile-area{
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+    padding: 50px;
+    text-align: center;
+}
+.profile-area h1{
+    margin: 5px;
+}
 
 main {
     padding: 20px;

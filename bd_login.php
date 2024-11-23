@@ -1,5 +1,5 @@
 <?php
-    include "connection.php";
+    include "bd_connection.php";
     session_start();
     $connection = create_connection();
     $email = $_POST["email"];
@@ -16,5 +16,5 @@
         $row = mysqli_fetch_assoc($result);
         $user_id = $row['id'];
         $_SESSION['id'] = $user_id;
-        header('Location:menu.html');
+        header('Location:fd_menu.html');
     }
