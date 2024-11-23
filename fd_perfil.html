@@ -25,17 +25,12 @@
         </div>
     </header>
     <main>
-        <h1 class="profile-title">Olá ${nome}, Seja Bem-Vindo!</h1>
+        <h1 class="profile-title">Olá, Seja Bem-Vindo!</h1>
         <h2 class="profile-title">Meus Cursos:</h2>
-        <div class="profile-area">
-           <script>
-                
-           </script>
-        </div>
-       
+        <div class="profile-area" id="profile_area">Nenhum Curso registrado</div>
     </main>
     <footer>
-        <div class="line-foteer">
+        <div class="line-footer">
             <div class="flex">
                 <div class="cont-footer">
                     <a href="#"><button><i class="bi bi-instagram"></i></button></a>
@@ -47,9 +42,52 @@
                 </div>
             </div>
         </div>
-        <div class="line-footer">
-        </div>
-</footer>
-    </main>
+        <div class="line-footer"></div>
+    </footer>
+    <script> 
+        const profileArea = document.getElementById("profile_area");
+    
+        // Recupera os cursos armazenados no localStorage. Se não houver cursos armazenados, inicializa uma lista vazia.
+        let cursos = JSON.parse(localStorage.getItem('cursos')) || []; // Recupera os cursos ou inicializa como uma lista vazia
+    
+        // Função para excluir um curso da lista
+        function excluirCurso(curso) {
+            // Filtra a lista de cursos removendo o curso que foi clicado
+            cursos = cursos.filter(c => c !== curso); // Atualiza a lista removendo o curso
+    
+            // Atualiza o localStorage com a nova lista de cursos, convertendo-a para o formato JSON
+            localStorage.setItem('cursos', JSON.stringify(cursos));
+    
+            // Atualiza a exibição dos cursos na página, refletindo a lista modificada
+            atualizarCursos();
+        }
+    
+        // Função para atualizar a lista de cursos na página
+        function atualizarCursos() {
+            // Verifica se há cursos na lista
+            if (cursos.length > 0) {
+                // Atualiza o conteúdo da área de perfil com a nova lista de cursos
+                profileArea.innerHTML = cursos
+                    .map(curso => {
+                        // Cria um parágrafo com o nome do curso e um botão de exclusão
+                        return `
+                            <p>
+                                ${curso} 
+                                <button onclick="excluirCurso('${curso}')">Excluir</button>
+                            </p>
+                        `;
+                    })
+                    // Junta todos os parágrafos gerados em uma única string HTML
+                    .join('');
+            } else {
+                // Exibe a mensagem padrão quando não há cursos registrados
+                profileArea.innerHTML = '<p>Nenhum Curso registrado</p>';
+            }
+        }
+    
+        // Inicializa a página com a lista de cursos, chamando a função que exibe os cursos
+        atualizarCursos();
+    </script>
+    
 </body>
 </html>

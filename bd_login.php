@@ -16,5 +16,5 @@
         $row = mysqli_fetch_assoc($result);
         $user_id = $row['id'];
         $_SESSION['id'] = $user_id;
-        header('Location:fd_menu.html');
+        header('Location:fd_perfil.html');
     }

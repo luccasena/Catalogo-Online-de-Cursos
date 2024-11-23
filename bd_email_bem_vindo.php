@@ -23,9 +23,9 @@
 
     function email_bem_vindo($email, $nome){
 
-        require 'C:\xampp\htdocs\trabalho\vendor\phpmailer\phpmailer\src\Exception.php';
-        require 'C:\xampp\htdocs\trabalho\vendor\phpmailer\phpmailer\src\PHPMailer.php';
-        require 'C:\xampp\htdocs\trabalho\vendor\phpmailer\phpmailer\src\SMTP.php';
+        require 'D:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\Exception.php';
+        require 'D:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\PHPMailer.php';
+        require 'D:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\SMTP.php';
 
         // Instância da classe PHPMailer.
         $mail = new PHPMailer(true);
