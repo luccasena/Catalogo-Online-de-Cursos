@@ -9,4 +9,4 @@ Integrantes envolvidos no projeto:
 
  - [Lucca de Sena Barbosa - (Back-End)](https://github.com/luccasena)
  - [Leonardo Lucas de Brito Silva - (Back-End)](https://github.com/leonardolucasbs)
- - Maximus Feitoza Lira Cunha - (Back-End)
+ - [Maximus Feitoza Lira Cunha - (Back-End)](https://github.com/MaxFeitoza)
