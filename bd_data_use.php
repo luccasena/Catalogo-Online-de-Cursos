@@ -17,7 +17,7 @@
         
     }elseif($pegar_curso == "front_end"){
         $curso = "Front-End";
-        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session)");
+        mysqli_query($connection,"INSERT INTO cursos (user_id) VALUES ('$get_id_in_session')");
         inscrever_curso($email, $nome, $curso);
 
     }elseif($pegar_curso == "back_end"){
@@ -38,6 +38,6 @@
     }
     echo('<script language="javascript" type="text/javascript">
         alert("Curso Registrado!");
-        window.location.href = "bd_perfil.html";
+        window.location.href = "fd_perfil.html";
     </script>');
 ?>

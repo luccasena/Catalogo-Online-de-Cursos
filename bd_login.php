@@ -9,7 +9,7 @@
         echo(
             '<script language="javascript" type="text/javascript">
                 alert("Senha ou E-mail incorreto");
-                window.location.href = "login.html";
+                window.location.href = "fd_login.html";
             </script>');
     }
     else{

@@ -7,9 +7,9 @@ use PHPMailer\PHPMailer\Exception;
 
     function inscrever_curso($email, $nome, $curso){
 
-        require 'D:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\Exception.php';
-        require 'D:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\PHPMailer.php';
-        require 'D:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\SMTP.php';
+        require // Caminho que leva até a a pasta do Exception.php no vendor.
+        require // Caminho que leva até a a pasta do PHPMailer.php no vendor.
+        require // Caminho que leva até a a pasta do SMTP.php no vendor.
 
         // Instância da classe PHPMailer.
         $mail = new PHPMailer(true);
