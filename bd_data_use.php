@@ -38,6 +38,6 @@
     }
     echo('<script language="javascript" type="text/javascript">
         alert("Curso Registrado!");
-        window.location.href = "fd_perfil.html";
+        window.location.href = "bd_perfil.html";
     </script>');
 ?>
