@@ -16,7 +16,7 @@
     $result = mysqli_query($connection,"SELECT * FROM users WHERE email = '$email'");
     $row = mysqli_fetch_assoc($result);
     $user_id = $row['id'];
-    $_SESSION['user_id'] = $user_id;
+    $_SESSION['id'] = $user_id;
     email_bem_vindo($email, $name);
   }
 
