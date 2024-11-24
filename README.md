@@ -14,11 +14,11 @@ Aplicação que exibe cursos disponíveis e permite que usuários se inscrevam, 
 
 ### 📌 Imagens da plataforma:
 
-<img src="imgs/menu.jpg" alt="Menu do Site"><br>
-<img src="imgs/cursos.jpg" alt="Cursos do Site"><br>
-<img src="imgs/resumo_curso.jpg" alt="Resumo dos cursos"><br>
-<img src="imgs/email_bem_vindo.jpg" alt="E-mail de Bem vindo"><br>
-<img src="imgs/email_confirmacao_curso.jpg" alt="E-mail de Confirmação do curso">
+<img src="readme\imgs\menu.jpg" alt="Menu do Site"><br>
+<img src="readme\imgs\cursos.jpg" alt="Cursos do Site"><br>
+<img src="readme\imgs\resumo_curso.jpg" alt="Resumo dos cursos"><br>
+<img src="readme\imgs\email_bem_vindo.jpg" alt="E-mail de Bem vindo"><br>
+<img src="readme\imgs\email_confirmacao_curso.jpg" alt="E-mail de Confirmação do curso">
 
 ### 📌 Ferramentas Utilizadas para o Projeto:
 
