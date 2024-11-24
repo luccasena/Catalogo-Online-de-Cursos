@@ -7,9 +7,8 @@ Aplicação que exibe cursos disponíveis e permite que usuários se inscrevam, 
  - [Cauã Augusto Machado de Negreiros - (Front-End)](https://github.com/cauaaugustow)
  - [José Victor dos Santos Lima - (Front-End)](https://github.com/VictorSLima7)
  - [Ryan Emanuel Lima Miranda - (Front-End)](https://github.com/ryanlimaw)
-
+ - [Leonardo Lucas de Brito Silva - (Front-End)](https://github.com/leonardolucasbs)
  - [Lucca de Sena Barbosa - (Back-End)](https://github.com/luccasena)
- - [Leonardo Lucas de Brito Silva - (Back-End)](https://github.com/leonardolucasbs)
  - [Maximus Feitoza Lira Cunha - (Back-End)](https://github.com/MaxFeitoza)
 
 ### 📌 Imagens da plataforma:
