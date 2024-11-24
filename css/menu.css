@@ -171,6 +171,7 @@ section .container-cursos{
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    margin-right: 3rem;
 }
 
 section .container-cursos .curso-card{

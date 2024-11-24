@@ -26,6 +26,5 @@
         mysqli_query($connection,"CREATE TABLE IF NOT EXISTS cursos
             (id INT NOT NULL AUTO_INCREMENT,
             user_id INT NOT NULL,
-            name VARCHAR(50) NOT NULL,
             PRIMARY KEY (id))");
     }

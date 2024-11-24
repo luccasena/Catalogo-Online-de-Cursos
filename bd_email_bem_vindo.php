@@ -23,9 +23,9 @@
 
     function email_bem_vindo($email, $nome){
 
-        require // Caminho que leva até a a pasta do Exception.php no vendor.
-        require // Caminho que leva até a a pasta do PHPMailer.php no vendor.
-        require // Caminho que leva até a a pasta do SMTP.php no vendor.
+        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\Exception.php';
+        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\PHPMailer.php';
+        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\SMTP.php';
 
         // Instância da classe PHPMailer.
         $mail = new PHPMailer(true);
