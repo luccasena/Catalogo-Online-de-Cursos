@@ -1,17 +1,6 @@
 <?php
-    /* 
+ 
 
-        Porquê NÃO utilizar a função padrão mail() do PHP?
-        
-        - A função mail() criada pelo próprio PHP para enviar e-mails é considerada limitada e desatualizada devido a uma certa quantidade de fatores que levam ela a ser caracterizada como tal. Entre elas, existem esses problemas:
-
-            1. Não suporta Autenticação SMTP: Esta autenticação é essencial para o envio de e-mails.
-            2. Dificuldades ao criar E-mails complexos: Criar um e-mail personalizado da própria empresa é essencial para cativar a atenção do destinatário.
-            3. Problemas de entrega: Pelo fato de que está função não possui suporte para os protocolos mais modernos, como dito anteriormente, os e-mail enviados por essa função podem ser considerado um spam.
-
-        Para evitar todos esses problemas, optamos por utilizar uma biblioteca chamada PHPMailer, uma biblioteca que utiliza-se de uma classe para o envio de e-mails modernos e autenticados pelo SMTP.
-
-    */
 
     // Realiza as importações das funcionalidades utilizadas no código:
 
@@ -23,9 +12,9 @@
 
     function email_bem_vindo($email, $nome){
 
-        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\Exception.php';
-        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\PHPMailer.php';
-        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\SMTP.php';
+        require // Caminho que leva ao arquivo Exception.php
+        require // Caminho que leva ao arquivo PHPMailer.php
+        require // Caminho que leva ao arquivo SMTP.php
 
         // Instância da classe PHPMailer.
         $mail = new PHPMailer(true);

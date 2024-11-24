@@ -1,15 +1,15 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
 
 
     function inscrever_curso($email, $nome, $curso){
 
-        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\Exception.php';
-        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\PHPMailer.php';
-        require 'C:\xampp\htdocs\Catalogo-Online-de-Cursos\vendor\phpmailer\src\SMTP.php';
+        require // Caminho que leva ao arquivo Exception.php
+        require // Caminho que leva ao arquivo PHPMailer.php
+        require // Caminho que leva ao arquivo SMTP.php
 
         // Instância da classe PHPMailer.
         $mail = new PHPMailer(true);
@@ -20,8 +20,8 @@ use PHPMailer\PHPMailer\Exception;
 
             $mail->isSMTP();                                            // Define o uso de SMTP no envio.
             $mail->SMTPAuth   = true;                                   // Habilita a autenticação SMTP.
-            $mail->Username   = '';                    // O e-mail da empresa.
-            $mail->Password   = '';                 // A senha do e-mail da empresa.
+            $mail->Username   = '';                                     // O e-mail da empresa.
+            $mail->Password   = '';                                     // A senha do e-mail da empresa.
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Criptografia: Importante para manter a segurança dos dados no momento de envio.
             $mail->Host       = 'smtp.gmail.com';                       // Define que o servidor utilizado para o envio de e-mails é o "gmail" ou simplesmente define o host SMTP.
             $mail->Port       = 465;                                    // Define a porta utilizada para a comunicação com o servidor SMTP.
