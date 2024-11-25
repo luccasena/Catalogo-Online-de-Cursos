@@ -1,12 +1,10 @@
 <?php
  
+    // Reduz o caminho que seria utilizado no código:
 
-
-    // Realiza as importações das funcionalidades utilizadas no código:
-
-    use PHPMailer\PHPMailer\PHPMailer;  // Importa a Biblioteca Principal.
-    use PHPMailer\PHPMailer\SMTP;       // Importa o protocolo SMTP.
-    use PHPMailer\PHPMailer\Exception;  // Importa para o tratamento de erro.
+    use PHPMailer\PHPMailer\PHPMailer;  // Reduz o caminho para a Biblioteca Principal.
+    use PHPMailer\PHPMailer\SMTP;       // Reduz o caminho para o protocolo SMTP.
+    use PHPMailer\PHPMailer\Exception;  // Reduz o caminho para a o tratamento de erro.
 
     // O código foi criado através de uma função para ser mais fácil de implementa-la no sistema. Nele, foi passado os parâmetros "$email" e "$nome" que serão respectivos ao e-mail e nome do usuário.
 

@@ -4,6 +4,8 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 
+    // O código foi criado através de uma função para ser mais fácil de implementa-la no sistema. Nele, foi passado os parâmetros "$email", "$nome" e "$curso" que serão respectivos ao e-mail, nome e o curso inscrito do usuário.
+
 
     function inscrever_curso($email, $nome, $curso){
 
